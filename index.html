@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Job Application</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="stylesheet.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="form-container">
+            <header>
+                <div class="header-text">
+                    <h1 id="title">Survey Form</h1>
+                    <p id="description">Tell us about your experience</p>
+                </div>
+            </header>
+            <div class="wrapper">
+                <form action="" id="survey-form">
+                    <div class="primary-content">
+                        <!-------------Name------------>
+                        <div class="form-row">
+                            <label 
+                                for="name" 
+                                name="name" 
+                                id="name-label"
+                                class="block-label">
+                                First Name
+                            </label>
+                            <div class="border-wrap">
+                                <input 
+                                    type="text" 
+                                    id="name" 
+                                    name="name" 
+                                    placeholder="Type your Name" 
+                                    class="block-input text-fields"
+                                    required>
+                            </div>
+                        </div>
+                        
+                        <!-------------Last Name------------>
+                        <div class="form-row">
+                            <label 
+                                for="lastName" 
+                                name="lastName" 
+                                id="lastname-label"
+                                class="block-label">
+                                Last Name
+                            </label>
+                            <div class="border-wrap">
+                                <input 
+                                    type="text" 
+                                    id="lastName" 
+                                    name="lastName" 
+                                    placeholder="Type your Last Name" 
+                                    class="block-input text-fields"
+                                    required>
+                            </div>
+                        </div>
+                        <!-------------E-mail------------>
+                        <div class="form-row">
+                            <label 
+                                for="email" 
+                                name="email" 
+                                id="email-label"
+                                class="block-label">
+                                Email
+                            </label>
+                            <div class="border-wrap">
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    placeholder="Type your Email address" 
+                                    class="block-input text-fields"
+                                    required>
+                            </div>
+                        </div>
+                        <!-------------Age------------>
+                        <div class="form-row">
+                            <label 
+                                for="number" 
+                                name="age" 
+                                id="number-label"
+                                class="block-label">
+                                Age
+                            </label>
+                            <div class="border-wrap">
+                                <input 
+                                    type="number" 
+                                    id="number" 
+                                    name="age" 
+                                    min="18" 
+                                    max="120" 
+                                    class="block-input text-fields"
+                                    placeholder="Enter your age">
+                            </div>
+                        </div>
+
+                        <!-------------Gender------------>
+                        <div class="form-row">
+                            <p class="block-label">Gender</p>
+                            <label class="radio gender">
+                                <input type="radio" value="male" name="gender">
+                                Male
+                                <span></span>
+                            </label>
+                            <label class="radio gender">
+                                <input type="radio" value="female" name="gender">
+                                Female
+                                <span></span>
+                            </label>
+                        </div>
+                        <!-----------------Phone Number------------------>
+                        <div class="form-row">
+                            <label class="block-label" 
+                                   for="phone_number">
+                                   Phone Number
+                            </label>
+                            <div class="border-wrap">
+                                <input class="block-input text-fields"
+                                    type="text" 
+                                    id="phone_number" 
+                                    name="user_number" 
+                                    placeholder="Type your phone number">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="secondary-content">
+                        <!------------Career Info------------>
+                        <div class="form-row">
+                            <label for="dropdown" name="dropdown" class="block-label">Which option best describes your current role?</label>
+                            <select id="dropdown">
+                                <optgroup label="Web">
+                                    <option value="full-stack">Full-Stack Developer</option>
+                                    <option value="php">PHP Developer</option>
+                                    <option value="python">Python Developer</option>
+                                </optgroup>
+                                <optgroup label="Mobile">
+                                    <option value="ios">IOS</option>
+                                    <option value="android">Android</option>
+                                </optgroup>
+                                <optgroup label="Bussiness">
+                                    <option value="freelancer">Freelancer</option>
+                                    <option value="owner">Bussiness Owner</option>
+                                </optgroup>
+                            </select>
+                        </div>
+
+                        <!----------Experience------------>
+                        <div class="form-row">
+                            <p class="block-label">What is your experience with coding</p>
+
+                            <label class="radio exp">
+                                <input 
+                                    type="radio" 
+                                    id="begineer" 
+                                    name="experience"
+                                    value="beginner"/>  
+                                begineer
+                                <span></span>
+                            </label>
+
+                            <label class="radio exp">
+                                <input 
+                                    type="radio" 
+                                    id="intermediate" 
+                                    name="experience"
+                                    value="intermediate">
+                                Intermediate
+                                <span></span>
+                            </label>
+
+                            <label class="radio exp">
+                                <input 
+                                    type="radio" 
+                                    id="advanced" 
+                                    name="experience"
+                                    value="advanced">
+                                Advanced
+                                <span></span>
+                            </label>
+                        </div>
+
+                        <!----------Technologies-------->
+                        <div class="form-row">
+
+                            <p class="block-label">Are you experienced with any of those technologies ?</p>
+
+                            <div class="user-skills">
+                                <label class="check">
+                                    HTML
+                                    <input 
+                                        type="checkbox" 
+                                        id="html" 
+                                        name="familiarity-with"
+                                        value="html">
+                                    <span class="checkmark"></span>
+                                </label>
+
+                                <label class="check">
+                                    Javascript
+                                    <input 
+                                        type="checkbox"
+                                        id="js" 
+                                        name="familiarity-with"
+                                        value="javascript">
+                                    <span class="checkmark"></span>
+                                </label>
+
+                                <label class="check">
+                                    CSS 
+                                    <input 
+                                        type="checkbox"
+                                        id="css"
+                                        name="familiarity-with"
+                                        value="css">
+                                    <span class="checkmark"></span>
+                                </label>
+
+                                <label class="check">
+                                    Python
+                                    <input
+                                        type="checkbox"
+                                        id="python"
+                                        name="familiarity-with"
+                                        value="python">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ------Additional Comments----------- -->
+                    <div class="form-row text-row">
+                        <p class="block-label textarea-head">What do you think makes you qualified for this job ?</p>
+                        <div class="border-wrap">
+                            <textarea></textarea>
+                        </div>
+                    </div>
+                    <div class="btn-container">
+                        <button id="submit">Submit</button> 
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
